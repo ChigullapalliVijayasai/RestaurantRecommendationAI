@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 class RestaurantRecommender:
     def __init__(self, csv_path):
-        self.data = pd.read_csv(csv_path)
+        self.data = pd.read_csv(restaurants.csv)
         self.prepare_data()
 
     def prepare_data(self):
